@@ -1,0 +1,29 @@
+*
+  box-sizing: border-box
+
+.icon
+  display: inline-block
+  vertical-align: middle
+
+[type="text"],
+[type="search"],
+[type="tel"],
+[type="email"],
+[type="number"]
+  -webkit-appearance: none !important
+
+.site-container
+  margin: 0 auto
+  padding:
+    left: rem-calc(map-get($grid-column-gutter, small))
+    right: rem-calc(map-get($grid-column-gutter, small))
+  +breakpoint(medium)
+    max-width: $global-width + rem-calc(map-get($grid-column-gutter, medium))
+    padding:
+      left: rem-calc(map-get($grid-column-gutter, medium)) / 2
+      right: rem-calc(map-get($grid-column-gutter, medium)) / 2
+
+
+.container
+  margin: 0 auto
+  max-width: $global-width
