@@ -43,6 +43,8 @@ var path = {
         vendorsJs: 'src/js/**/vendors.js',
         style: 'src/sass/**/*.*',
         img: 'src/images/**/*.*',
+        pngSprite: 'src/sprite/png/*.png',
+        svgSprite: 'src/sprite/svg/**/*.svg',
         fonts: 'src/fonts/**/*.*'
     },
     clean: './build'
@@ -156,10 +158,11 @@ gulp.task('build', [
     'vendorsJs:build',
     'style:build',
     'fonts:build',
-    'image:build'
+    'image:build',
+    'png-sprite',
+    'svg-sprite'
 ]);
 
-// TODO: добавить watcher для спрайтов
 gulp.task('watch', function () {
     watch([path.watch.pug], function (event, cb) {
         gulp.start('html:build');
@@ -175,6 +178,12 @@ gulp.task('watch', function () {
     });
     watch([path.watch.img], function (event, cb) {
         gulp.start('image:build');
+    });
+    watch([path.watch.pngSprite], function (event, cb) {
+        gulp.start('png-sprite');
+    });
+    watch([path.watch.svgSprite], function (event, cb) {
+        gulp.start('svg-sprite');
     });
     watch([path.watch.fonts], function (event, cb) {
         gulp.start('fonts:build');
