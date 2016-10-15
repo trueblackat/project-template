@@ -3,7 +3,7 @@
 //= ../../bower_components/foundation-sites/dist/plugins/foundation.core.js
 //= ../../bower_components/foundation-sites/dist/plugins/foundation.util.box.js
 //= ../../bower_components/foundation-sites/dist/plugins/foundation.util.keyboard.js
-//= ../../bower_components/foundation-sites/dist/plugins/foundation.util.MediaQuery.js
+//= ../../bower_components/foundation-sites/dist/plugins/foundation.util.mediaQuery.js
 //= ../../bower_components/foundation-sites/dist/plugins/foundation.util.motion.js
 //= ../../bower_components/foundation-sites/dist/plugins/foundation.util.nest.js
 //= ../../bower_components/foundation-sites/dist/plugins/foundation.util.timerAndImageLoader.js
@@ -30,7 +30,6 @@
 // ../../bower_components/foundation-sites/dist/plugins/foundation.sticky.js
 // ../../bower_components/foundation-sites/dist/plugins/foundation.tabs.js
 // ../../bower_components/foundation-sites/dist/plugins/foundation.toggler.js
-// ../../bower_components/foundation-sites/dist/plugins/foundation.tooltip.js
 // ../../bower_components/foundation-sites/dist/plugins/foundation.tooltip.js
 
 // Other vendor
