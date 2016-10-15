@@ -40,6 +40,7 @@ var path = {
     watch: {
         pug: 'src/**/*.pug',
         mainJs: 'src/js/**/main.js',
+        partialsJs: 'src/js/partials/**/*.js',
         vendorsJs: 'src/js/**/vendors.js',
         style: 'src/sass/**/*.*',
         img: 'src/images/**/*.*',
@@ -170,7 +171,7 @@ gulp.task('watch', function () {
     watch([path.watch.style], function (event, cb) {
         gulp.start('style:build');
     });
-    watch([path.watch.mainJs], function (event, cb) {
+    watch([path.watch.mainJs, path.watch.partialsJs], function (event, cb) {
         gulp.start('mainJs:build');
     });
     watch([path.watch.vendorsJs], function (event, cb) {
