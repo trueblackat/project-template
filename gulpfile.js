@@ -117,16 +117,17 @@ gulp.task('fonts:build', function () {
 // PNG Sprites
 gulp.task('png-sprite', function () {
     var spriteData =
-        gulp.src(path.src.pngSprite + '*.*')
+        gulp.src(path.src.pngSprite + '*.png')
             .pipe(spritesmith({
-                imgName: 'sprite.png',
-                cssName: '_png-sprite.sass',
-                cssFormat: 'sass',
-                algorithm: 'binary-tree',
-                cssTemplate: 'sass.template.mustache',
-                cssVarMap: function (sprite) {
-                    sprite.name = sprite.name
-                }
+              retinaSrcFilter: path.src.pngSprite + '*-2x.png',
+              imgName: 'sprite.png',
+              retinaImgName: 'sprite-2x.png',
+              cssName: '_png-sprite.sass',
+              cssTemplate: 'sass.template.mustache',
+              cssVarMap: function (sprite) {
+                sprite.name = sprite.name;
+                sprite.image2x = 'sprite-2x.png';
+              }
             }));
 
     spriteData.img.pipe(gulp.dest('src/images/'));
