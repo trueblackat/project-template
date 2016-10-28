@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     cssmin = require('gulp-cssmin'),
     sass = require('gulp-sass'),
+    sassLint = require('gulp-sass-lint'),
     sourcemaps = require('gulp-sourcemaps'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
@@ -95,6 +96,13 @@ gulp.task('style:build', function () {
         //.pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.css))
         .pipe(browserSync.stream());
+});
+
+gulp.task('sassLint', function () {
+    return gulp.src('src/sass/**/*.s+(a|c)ss')
+        .pipe(sassLint())
+        .pipe(sassLint.format())
+        .pipe(sassLint.failOnError())
 });
 
 gulp.task('image:build', function () {
