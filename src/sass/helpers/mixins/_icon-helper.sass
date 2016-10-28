@@ -1,21 +1,21 @@
-@mixin spriteWidth($sprite)
+@mixin sprite-width($sprite)
   width: nth($sprite, 5)
 
 
-@mixin spriteHeight($sprite)
+@mixin sprite-height($sprite)
   height: nth($sprite, 6)
 
 
-@mixin spritePosition($sprite)
+@mixin sprite-position($sprite)
   background-position: nth($sprite, 3) nth($sprite, 4)
 
 
-@mixin spriteImage($sprite)
-  background-image: url("../images/#{nth($sprite, 9)}")
+@mixin sprite-image($sprite)
+  background-image: url('../images/#{nth($sprite, 9)}')
 
 
 @mixin sprite($sprite)
-  +spriteImage($sprite)
-  +spritePosition($sprite)
-  +spriteWidth($sprite)
-  +spriteHeight($sprite)
+  +sprite-image($sprite)
+  +sprite-position($sprite)
+  +sprite-width($sprite)
+  +sprite-height($sprite)
