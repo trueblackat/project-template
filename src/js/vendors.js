@@ -1,16 +1,18 @@
-// Add core Foundation files
+// Foundation Core files
 
-//= ../../bower_components/foundation-sites/dist/plugins/foundation.core.js
-//= ../../bower_components/foundation-sites/dist/plugins/foundation.util.box.js
-//= ../../bower_components/foundation-sites/dist/plugins/foundation.util.keyboard.js
-//= ../../bower_components/foundation-sites/dist/plugins/foundation.util.mediaQuery.js
-//= ../../bower_components/foundation-sites/dist/plugins/foundation.util.motion.js
-//= ../../bower_components/foundation-sites/dist/plugins/foundation.util.nest.js
-//= ../../bower_components/foundation-sites/dist/plugins/foundation.util.timerAndImageLoader.js
-//= ../../bower_components/foundation-sites/dist/plugins/foundation.util.touch.js
-//= ../../bower_components/foundation-sites/dist/plugins/foundation.util.triggers.js
+// Если в проекте используются встроенные js-плагины от Foundation, заменить // на //=
 
-// Add Foundation plugins
+// ../../bower_components/foundation-sites/dist/plugins/foundation.core.js
+// ../../bower_components/foundation-sites/dist/plugins/foundation.util.box.js
+// ../../bower_components/foundation-sites/dist/plugins/foundation.util.keyboard.js
+// ../../bower_components/foundation-sites/dist/plugins/foundation.util.mediaQuery.js
+// ../../bower_components/foundation-sites/dist/plugins/foundation.util.motion.js
+// ../../bower_components/foundation-sites/dist/plugins/foundation.util.nest.js
+// ../../bower_components/foundation-sites/dist/plugins/foundation.util.timerAndImageLoader.js
+// ../../bower_components/foundation-sites/dist/plugins/foundation.util.touch.js
+// ../../bower_components/foundation-sites/dist/plugins/foundation.util.triggers.js
+
+// Foundation plugins
 
 // ../../bower_components/foundation-sites/dist/plugins/foundation.abide.js
 // ../../bower_components/foundation-sites/dist/plugins/foundation.accordion.js
@@ -33,3 +35,4 @@
 // ../../bower_components/foundation-sites/dist/plugins/foundation.tooltip.js
 
 // Other vendor
+//= ../../bower_components/promise-polyfill/promise.min.js
