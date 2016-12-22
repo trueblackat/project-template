@@ -1,7 +1,7 @@
 {
-  "name": "myGulpPack",
-  "version": "1.0.0",
-  "description": "Simple boilerplate Gulp + Rigger + Sass + Compass + LiveReload",
+  "name": "foundation-project-template",
+  "version": "1.0.1",
+  "description": "Simple boilerplate Gulp + Rigger + Sass + Foundation + BrowserSync",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

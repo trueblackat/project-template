@@ -1,6 +1,6 @@
 {
-  "name": "myGulpPack",
-  "version": "0.0.0",
+  "name": "foundation-project-template",
+  "version": "1.0.1",
   "authors": [
     "Amir Gafurov <gafurovamir@gmail.com>"
   ],
@@ -11,7 +11,7 @@
     "bower_components"
   ],
   "dependencies": {
-    "foundation-sites": "^6.1.2",
+    "foundation-sites": "6.3.0",
     "promise-polyfill": "^6.0.2"
   }
 }
